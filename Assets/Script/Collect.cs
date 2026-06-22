@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
+    public GameObject Cubo;
+    public GameObject playerPickUpRange;
 
     // Start is called before the first frame update
     void Start()
@@ -12,13 +14,12 @@ public class Collect : MonoBehaviour
     }
 
     private void OnTriggertEnter(Collider other){
-        if (other.tag == Sphere){
-            Debug.Log("HEY")
+         if (other.CompareTag("PickUp")){
+            Debug.Log("HEY");
         }
     }
     // Update is called once per frame
     void Update()
     {
-        
     }
 }
