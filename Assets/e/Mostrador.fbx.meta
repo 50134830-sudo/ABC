@@ -1,41 +1,21 @@
 fileFormatVersion: 2
-guid: 11739626badd03b4cb864f34e9ac5600
+guid: e9359d5020b8b5347a7433c4f22a3af0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Cube
     100002: Cube.001
-    100004: Cube.002
-    100006: Cube.003
-    100008: Cube.004
-    100010: Cube.005
-    100012: //RootNode
+    100004: //RootNode
     400000: Cube
     400002: Cube.001
-    400004: Cube.002
-    400006: Cube.003
-    400008: Cube.004
-    400010: Cube.005
-    400012: //RootNode
+    400004: //RootNode
     2100000: No Name
     2300000: Cube
     2300002: Cube.001
-    2300004: Cube.002
-    2300006: Cube.003
-    2300008: Cube.004
-    2300010: Cube.005
     3300000: Cube
     3300002: Cube.001
-    3300004: Cube.002
-    3300006: Cube.003
-    3300008: Cube.004
-    3300010: Cube.005
     4300000: Cube
     4300002: Cube.001
-    4300004: Cube.002
-    4300006: Cube.003
-    4300008: Cube.004
-    4300010: Cube.005
   externalObjects: {}
   materials:
     importMaterials: 1
