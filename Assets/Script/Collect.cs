@@ -13,13 +13,18 @@ public class Collect : MonoBehaviour
         
     }
 
-    private void OnTriggertEnter(Collider other){
+    private void OnTriggerEnter(Collider other){
          if (other.CompareTag("PickUp")){
-            Debug.Log("HEY");
+            Debug.Log("collision");
+
+            if(Input.GetKeyDown(KeyCode.E)){        
+                Debug.Log("HEY");
+            }
         }
     }
     // Update is called once per frame
     void Update()
     {
+        
     }
 }
