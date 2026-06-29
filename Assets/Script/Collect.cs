@@ -4,27 +4,37 @@ using UnityEngine;
 
 public class Collect : MonoBehaviour
 {
-    public GameObject Cubo;
-    public GameObject playerPickUpRange;
+    private int score = 0;
+    private bool inRange = false;
+    private GameObject currentPickup;
 
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    private void OnTriggerEnter(Collider other){
-         if (other.CompareTag("PickUp")){
+        if (other.CompareTag("PickUp"))
+        {
             Debug.Log("collision");
-
-            if(Input.GetKeyDown(KeyCode.E)){        
-                Debug.Log("HEY");
-            }
+            inRange = true;
+            currentPickup = other.gameObject;
         }
     }
-    // Update is called once per frame
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("PickUp"))
+        {
+            inRange = false;
+            currentPickup = null;
+        }
+    }
+
     void Update()
     {
-        
+        if (inRange && Input.GetKeyDown(KeyCode.E))
+        {
+            currentPickup.SetActive(false);
+            Debug.Log("Gone");
+            score = score ++;
+            Debug.Log($"Current score: {score}");
+        }
     }
 }
